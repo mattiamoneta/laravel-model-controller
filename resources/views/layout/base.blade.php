@@ -8,9 +8,13 @@
         <!-- Styles -->
         @vite('resources/js/app.js')
 
-    <title>Document</title>
+    <title>@yield('page-title')</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row py-5">
+            @yield('page-content')
+        </div>
+    </div>
 </body>
 </html>

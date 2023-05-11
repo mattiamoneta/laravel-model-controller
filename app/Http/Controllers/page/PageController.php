@@ -12,12 +12,7 @@ use App\Models\Movie;
 class PageController extends Controller
 {
     public function index(){
-
-       
-        $movies = [
-            "table" => Movie::all()
-        ];
-
-        return view('index', $movies);
+        $movies = Movie::all();
+        return view('index', compact('movies'));                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 }
